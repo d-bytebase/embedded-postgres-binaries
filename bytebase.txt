@@ -1,0 +1,2 @@
+./gradlew clean :repacked-platforms:install -Pversion=14.2.0 -PpgVersion=14.2 -ParchName=amd64 -PdistName=alpine
+./gradlew clean :repacked-platforms:install -Pversion=14.2.0 -PpgVersion=14.2 -ParchName=amd64
