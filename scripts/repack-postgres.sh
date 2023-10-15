@@ -97,7 +97,7 @@ if [ "$PLATFORM_NAME" = "darwin" ] ; then
     $([ -f lib/libcom_err.dylib ] && echo lib/libcom_err.*.*.dylib || echo ) \
     $([ -f opt/local/lib/libncurses.6.dylib ] && echo opt || echo ) \
     lib/libz*.dylib \
-    lib/libpq* \
+    lib/libpq*.dylib \
     lib/libuuid*.dylib \
     lib/libxml2*.dylib \
     lib/libssl*.dylib \
@@ -107,7 +107,6 @@ if [ "$PLATFORM_NAME" = "darwin" ] ; then
     bin/initdb \
     bin/pg_ctl \
     bin/pg_dump \
-    bin/psql \
     bin/postgres
 
 elif [ "$PLATFORM_NAME" = "windows" ] ; then
@@ -121,7 +120,6 @@ elif [ "$PLATFORM_NAME" = "windows" ] ; then
     bin/initdb.exe \
     bin/pg_ctl.exe \
     bin/pg_dump.exe \
-    bin/psql.exe \
     bin/postgres.exe \
     bin/*.dll
 
