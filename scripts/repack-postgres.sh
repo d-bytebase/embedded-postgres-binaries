@@ -106,7 +106,6 @@ if [ "$PLATFORM_NAME" = "darwin" ] ; then
     lib/postgresql/*.* \
     bin/initdb \
     bin/pg_ctl \
-    bin/pg_dump \
     bin/postgres
 
 elif [ "$PLATFORM_NAME" = "windows" ] ; then
@@ -119,7 +118,6 @@ elif [ "$PLATFORM_NAME" = "windows" ] ; then
     lib/*.dll \
     bin/initdb.exe \
     bin/pg_ctl.exe \
-    bin/pg_dump.exe \
     bin/postgres.exe \
     bin/*.dll
 
@@ -130,7 +128,6 @@ elif [ "$PLATFORM_NAME" = "linux" ] ; then
     lib \
     bin/initdb \
     bin/pg_ctl \
-    bin/pg_dump \
     bin/postgres
 
 fi
