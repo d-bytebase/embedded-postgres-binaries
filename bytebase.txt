@@ -1,1 +1,3 @@
 ./gradlew clean :repacked-platforms:install -Pversion=16.0.0 -PpgVersion=16.0
+./gradlew clean install -Pversion=16.0.0 -PpgVersion=16.0 -ParchName=arm64v8
+./gradlew clean install -Pversion=16.0.0 -PpgVersion=16.0 -ParchName=amd64
